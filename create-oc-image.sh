@@ -52,3 +52,12 @@ cd ..
 echo "Cleaning..."
 rm -rf .opencore
 rm -f OpenCore-${OPENCORE_RELEASE}-RELEASE.zip
+
+echo "Now downloading macos basesystem downloader..."
+wget https://raw.githubusercontent.com/kholia/OSX-KVM/master/fetch-macOS.py
+python3 ./fetch-macOS.py
+rm ./fetch-macOS.py
+qemu-img convert BaseSystem.dmg -O raw BaseSystem.img
+rm BaseSystem.dmg
+
+
