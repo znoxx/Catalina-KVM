@@ -57,6 +57,7 @@ echo "Now downloading macos basesystem downloader..."
 wget https://raw.githubusercontent.com/kholia/OSX-KVM/master/fetch-macOS.py
 python3 ./fetch-macOS.py
 rm ./fetch-macOS.py
+rm -rf ./content
 qemu-img convert BaseSystem.dmg -O raw BaseSystem.img
 rm BaseSystem.dmg
 
