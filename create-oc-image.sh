@@ -35,7 +35,9 @@ cp --verbose resources/drivers/VBoxHfs.efi build/EFI/OC/Drivers/
 mkdir -p build/EFI/OC/Tools
 cp --verbose ./.opencore/EFI/OC/Tools/OpenShell.efi build/EFI/OC/Tools/
 cp --verbose ./.opencore/EFI/OC/Tools/ResetSystem.efi build/EFI/OC/Tools/
-cp --verbose -r ./.opencore/EFI/OC/Resources build/EFI/OC
+
+mkdir -p build/EFI/OC/Resources
+cp --verbose -r ./resources/resources/* build/EFI/OC/Resources/
 
 
 echo "Copying build script..."
