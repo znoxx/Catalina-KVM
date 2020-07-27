@@ -1,3 +1,3 @@
 #!/bin/sh
-sudo rm *.qcow2 *.img
+rm *.qcow2 *.img
 
