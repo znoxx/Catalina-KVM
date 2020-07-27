@@ -45,8 +45,8 @@ cp --verbose resources/opencore-image-ng.sh build/
 
 echo "Running build..."
 cd build
-sudo ./opencore-image-ng.sh  --cfg config.plist --img OpenCore.qcow2
-sudo ./opencore-image-ng.sh  --cfg config-nopicker.plist --img OpenCore-nopicker.qcow2  # ShowPicker disabled
+./opencore-image-ng.sh  --cfg config.plist --img OpenCore.qcow2
+./opencore-image-ng.sh  --cfg config-nopicker.plist --img OpenCore-nopicker.qcow2  # ShowPicker disabled
 mv OpenCore.qcow2 ../
 mv OpenCore-nopicker.qcow2 ../
 cd ..
